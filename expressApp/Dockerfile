@@ -3,13 +3,11 @@ RUN npm install -g nodemon
 
 WORKDIR /app
 
-COPY . .
+COPY  package.json .
 
 RUN npm install
 RUN npm install serve --location=global
 RUN npm ci
-RUN npm run build
-
 
 EXPOSE 3001
 
