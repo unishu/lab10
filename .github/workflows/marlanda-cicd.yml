@@ -42,7 +42,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: ./
-        file: ../expressApp/Dockerfile
+        file: ./expressApp/Dockerfile
         push: true
 #Change this to whatever your repository is called
         tags: ${{ secrets.DOCKER_HUB_USERNAME }}/lab10:latest
