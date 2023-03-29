@@ -9,7 +9,7 @@ RUN npm install
 RUN npm install serve --location=global
 RUN npm ci
 
-EXPOSE 3001
+EXPOSE 3002
 
 # Use script specified in package,json
 CMD ["npm", "start"]
