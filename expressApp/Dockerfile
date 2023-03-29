@@ -1,9 +1,19 @@
 FROM node:18-alpine
-
 RUN npm install -g nodemon
+
 WORKDIR /app
 
-RUN npm install
 COPY . .
-CMD [ "npm", "start"]
+
+RUN npm install
+RUN npm install serve --location=global
+RUN npm ci
+RUN npm run build
+
+
+COPY . .
+
 EXPOSE 3001
+
+# Use script specified in package,json
+CMD ["npm", "start"]
