@@ -1,0 +1,23 @@
+{
+  "name": "lab10",
+  "version": "1.0.0",
+  "description": "Assignment is to be completed by successfully completing the following tasks:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unishu/lab10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unishu/lab10/issues"
+  },
+  "homepage": "https://github.com/unishu/lab10#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
