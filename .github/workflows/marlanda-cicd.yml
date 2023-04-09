@@ -42,8 +42,8 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v4
       with:
-        context: ./expressApp
-        file: ./expressApp/Dockerfile
+        context: ./
+        file: ./Dockerfile
         push: true
 #Change this to whatever your repository is called
         tags: ${{ secrets.DOCKER_HUB_USERNAME }}/lab10:latest
