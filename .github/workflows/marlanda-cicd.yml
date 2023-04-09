@@ -24,7 +24,6 @@ jobs:
 
 
     - name: Install dependencies
-      working-directory: lab10
       run: npm install
 
     - name: Login to Docker Hub
