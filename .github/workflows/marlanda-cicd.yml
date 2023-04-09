@@ -24,6 +24,7 @@ jobs:
 
 
     - name: Install dependencies
+      working-directory: lab10
       run: npm install
 
     - name: Login to Docker Hub
@@ -41,13 +42,10 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v4
       with:
-        context: ./exercise1/expressApp
-        file: ./exercise1/expressApp/Dockerfile
+        context: ./expressApp
+        file: ./expressApp/Dockerfile
         push: true
 #Change this to whatever your repository is called
         tags: ${{ secrets.DOCKER_HUB_USERNAME }}/lab10:latest
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
-
-
-    

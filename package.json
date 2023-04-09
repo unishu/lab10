@@ -2,7 +2,7 @@
   "name": "lab10",
   "version": "1.0.0",
   "description": "Assignment is to be completed by successfully completing the following tasks:",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/unishu/lab10#readme",
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {}
 }
